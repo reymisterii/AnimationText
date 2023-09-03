@@ -29,6 +29,8 @@ function eraseText() {
       setTimeout(eraseText, deletingTextSpeed);
    } else {
       textindex = (textindex + 1) % texts.length;
+      // там де тек textindex = (textindex + 1) % text.length;, якщо до text додати s, то функція зациклиця
+
       charIndex = 0;
       setTimeout(typeText, pause);
    }
