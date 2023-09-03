@@ -28,7 +28,7 @@ function eraseText() {
    if (charIndex >= 0) {
       setTimeout(eraseText, deletingTextSpeed);
    } else {
-      textindex = (textindex + 1) % text.length;
+      textindex = (textindex + 1) % texts.length;
       charIndex = 0;
       setTimeout(typeText, pause);
    }
